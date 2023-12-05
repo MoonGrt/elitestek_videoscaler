@@ -1,0 +1,96 @@
+
+---------- Resource Summary (begin) ----------
+Inputs: 96 / 1703 (5.64%)
+Outputs: 279 / 2267 (12.31%)
+Global Clocks (GBUF): 16 / 32 (50.00%)
+Regional Clocks (RBUF): 1 / 32 (3.12%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 1 / 8 (12.50%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 16616 / 60800 (27.33%)
+	XLRs needed for Logic: 7933 / 60800 (13.05%)
+	XLRs needed for Logic + FF: 2515 / 60800 (4.14%)
+	XLRs needed for Adder: 1679 / 60800 (2.76%)
+	XLRs needed for Adder + FF: 764 / 60800 (1.26%)
+	XLRs needed for FF: 3167 / 60800 (5.21%)
+	XLRs needed for SRL8: 558 / 14720 (3.79%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 155 / 256 (60.55%)
+DSP Blocks: 29 / 160 (18.12%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 29
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 29
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- Resource Summary (begin) ----------
+Inputs: 96 / 1703 (5.64%)
+Outputs: 279 / 2267 (12.31%)
+Global Clocks (GBUF): 16 / 32 (50.00%)
+Regional Clocks (RBUF): 1 / 32 (3.12%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 1 / 8 (12.50%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 16616 / 60800 (27.33%)
+	XLRs needed for Logic: 7933 / 60800 (13.05%)
+	XLRs needed for Logic + FF: 2515 / 60800 (4.14%)
+	XLRs needed for Adder: 1679 / 60800 (2.76%)
+	XLRs needed for Adder + FF: 764 / 60800 (1.26%)
+	XLRs needed for FF: 3167 / 60800 (5.21%)
+	XLRs needed for SRL8: 558 / 14720 (3.79%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 155 / 256 (60.55%)
+DSP Blocks: 29 / 160 (18.12%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 29
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 29
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- Resource Summary (begin) ----------
+Inputs: 96 / 1703 (5.64%)
+Outputs: 279 / 2267 (12.31%)
+Global Clocks (GBUF): 16 / 32 (50.00%)
+Regional Clocks (RBUF): 1 / 32 (3.12%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 1 / 8 (12.50%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 16616 / 60800 (27.33%)
+	XLRs needed for Logic: 7933 / 60800 (13.05%)
+	XLRs needed for Logic + FF: 2515 / 60800 (4.14%)
+	XLRs needed for Adder: 1679 / 60800 (2.76%)
+	XLRs needed for Adder + FF: 764 / 60800 (1.26%)
+	XLRs needed for FF: 3167 / 60800 (5.21%)
+	XLRs needed for SRL8: 558 / 14720 (3.79%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 155 / 256 (60.55%)
+DSP Blocks: 29 / 160 (18.12%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 29
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 29
+
+---------- DSP Packer Summary (end) ----------
+

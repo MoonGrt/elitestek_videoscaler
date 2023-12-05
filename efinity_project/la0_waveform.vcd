@@ -1,0 +1,52 @@
+#0 $dumpon
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 down $end
+$var wire 1 1 vs_reg2 $end
+$var wire 1 2 vs_en $end
+$var wire 1 3 vs_reg1 $end
+$var wire 1 4 down_reg3 $end
+$var wire 1 5 down_reg1 $end
+$var wire 1 6 down_en $end
+$var wire 1 7 down_reg2 $end
+$var wire 24 8 algorithm/rgb_i $end
+$var wire 1 9 algorithm/de_i $end
+$var wire 1 a algorithm/vs_i $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+10
+01
+02
+03
+14
+15
+06
+17
+b110100111101001111010011 8
+09
+0a
+$end
+#30
+1a
+#31
+12
+13
+#32
+00
+11
+02
+#16383
+00
+11
+02
+13
+14
+15
+06
+17
+b110100111101001111010011 8
+09
+1a

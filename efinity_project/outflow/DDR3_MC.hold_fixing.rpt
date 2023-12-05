@@ -1,0 +1,7 @@
+Clock Domain Pair Hold Fix Requirements
+---------------------------------------
+driver_clock,	sink_clock,	excess_delay,	%_total_excess delay,	excess_delay_vs_base_min_delay,	hold_fix_requirements_are_high
+hdmi_rx_slow_clk,	sys_clk,	1113,	76.9%,	40.5%,	NO
+sys_clk,	sys_clk,	244,	16.9%,	19.1%,	NO
+hdmi_rx_slow_clk_2x,	sys_clk,	68,	4.7%,	100.6%,	NO
+tac_clk,	sys_clk,	13,	0.9%,	9.8%,	NO

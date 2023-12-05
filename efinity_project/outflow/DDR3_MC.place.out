@@ -1,0 +1,417 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.1.150.5.11 
+Compiled: Oct  4 2023.
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti60F225" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.dbg.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.25151 seconds.
+	VDB Netlist Checker took 0.25 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 71.056 MB, end = 71.056 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 72.6 MB
+VDB Netlist Checker resident set memory usage: begin = 80.832 MB, end = 81.116 MB, delta = 0.284 MB
+	VDB Netlist Checker peak resident set memory usage = 82.364 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv'.
+Successfully processed interface constraints file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv".
+Creating interface clock pin DDR3_PLL_CLKOUT4.
+Creating interface clock pin clk_125m.
+Creating interface clock pin clk_25m.
+Creating interface clock pin rxc.
+Creating interface clock pin rxc1.
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #55(hdmi_rx_clk_RX_DATA) has no fanout.
+Removing input.
+logical_block #93(hdmi_rx_pll_LOCKED) has no fanout.
+Removing input.
+logical_block #145(i_dqs_n_hi[1]) has no fanout.
+Removing input.
+logical_block #146(i_dqs_n_hi[0]) has no fanout.
+Removing input.
+logical_block #147(i_dqs_n_lo[1]) has no fanout.
+Removing input.
+logical_block #148(i_dqs_n_lo[0]) has no fanout.
+Removing input.
+logical_block #251(hdmi_sel) has no fanout.
+Removing input.
+logical_block #260(jtag_inst2_DRCK) has no fanout.
+Removing input.
+logical_block #262(jtag_inst2_RUNTEST) has no fanout.
+Removing input.
+logical_block #267(jtag_inst2_TMS) has no fanout.
+Removing input.
+Pass 0: Swept away 10 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 10 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 10 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.dbg.vdb".
+Netlist pre-processing took 0.730749 seconds.
+	Netlist pre-processing took 0.65625 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 23.476 MB, end = 107.392 MB, delta = 83.916 MB
+	Netlist pre-processing peak virtual memory usage = 110.412 MB
+Netlist pre-processing resident set memory usage: begin = 35.032 MB, end = 116.436 MB, delta = 81.404 MB
+	Netlist pre-processing peak resident set memory usage = 119.376 MB
+***** Ending stage netlist pre-processing *****
+
+Load Global Network took 0.933427 seconds.
+	Load Global Network took 0.625 seconds (approximately) in total CPU time.
+Load Global Network virtual memory usage: begin = 65.048 MB, end = 169.036 MB, delta = 103.988 MB
+	Load Global Network peak virtual memory usage = 228.396 MB
+Load Global Network resident set memory usage: begin = 73.908 MB, end = 153.884 MB, delta = 79.976 MB
+	Load Global Network peak resident set memory usage = 213.64 MB
+Reading S:/DevTools/Efinity/arch/.\rr_pb_hier_mapping.xml
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.net_proto" took 0.069 seconds
+Creating IO constraints file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.io_place'
+Packing took 0.203795 seconds.
+	Packing took 0.171875 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 234.512 MB, end = 247.148 MB, delta = 12.636 MB
+	Packing peak virtual memory usage = 248.908 MB
+Packing resident set memory usage: begin = 217.376 MB, end = 229.856 MB, delta = 12.48 MB
+	Packing peak resident set memory usage = 231.368 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.net_proto
+Read proto netlist for file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.net_proto" took 0.017 seconds
+Setup net and block data structure took 1.284 seconds
+Reading core interface constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv'.
+Successfully processed interface constraints file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv".
+Packed netlist loading took 4.25698 seconds.
+	Packed netlist loading took 6.48438 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 247.148 MB, end = 999.632 MB, delta = 752.484 MB
+	Packed netlist loading peak virtual memory usage = 1038.81 MB
+Packed netlist loading resident set memory usage: begin = 229.86 MB, end = 949.908 MB, delta = 720.048 MB
+	Packed netlist loading peak resident set memory usage = 988.956 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+Read router lookahead for device Ti60F225 from file S:/DevTools/Efinity/arch/./lookahead/QX25_C4.lookahead.zst.
+
+Load Router Lookahead took 0.516176 seconds.
+	Load Router Lookahead took 0.34375 seconds (approximately) in total CPU time.
+Load Router Lookahead virtual memory usage: begin = 1066.76 MB, end = 1297.93 MB, delta = 231.164 MB
+	Load Router Lookahead peak virtual memory usage = 1534.84 MB
+Load Router Lookahead resident set memory usage: begin = 1014.41 MB, end = 1241.3 MB, delta = 226.892 MB
+	Load Router Lookahead peak resident set memory usage = 1481.69 MB
+
+SDC file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/DDR3_MC.pt.sdc' parsed successfully.
+10 clocks (including virtual clocks), 66 inputs and 137 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv'.
+Successfully processed interface constraints file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv".
+Writing IO placement constraints to 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow\DDR3_MC.interface.io'.
+
+Reading placement constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow\DDR3_MC.interface.io'.
+
+Reading placement constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.io_place'.
+WARNING(1): o_dqs_n_hi[1] has no assigned placement; it will be placed randomly.
+WARNING(2): o_dqs_n_hi[0] has no assigned placement; it will be placed randomly.
+WARNING(3): o_dqs_n_lo[1] has no assigned placement; it will be placed randomly.
+WARNING(4): o_dqs_n_lo[0] has no assigned placement; it will be placed randomly.
+4 IOs will have random placement.
+WARNING(5): Clock driver jtag_inst2_TCK should use the dedicated clock pad.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 136 synchronizers as follows: 
+	Synchronizer 0:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 1:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i20_2
+	Synchronizer 2:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i19_2
+	Synchronizer 3:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i18_2
+	Synchronizer 4:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i17_2
+	Synchronizer 5:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i16_2
+	Synchronizer 6:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i15_2
+	Synchronizer 7:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i14_2
+	Synchronizer 8:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i24_2
+	Synchronizer 9:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 10:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_wr_ack[2]~FF
+	Synchronizer 11:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_wr_ack_p1~FF
+	Synchronizer 12:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_wr_ack_p~FF
+	Synchronizer 13:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_rd_ack_a[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_rd_ack_a[1]~FF
+	Synchronizer 14:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/r_wr_start_p[7]~FF
+	Synchronizer 15:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_dqs_wr_start_p[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_dqs_wr_start_p[1]~FF
+	Synchronizer 16:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_wr_ack[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_wr_ack[1]~FF
+	Synchronizer 17:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 18:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 19:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 20:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 21:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 22:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 23:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 24:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 25:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 26:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 27:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 28:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 29:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 30:  algorithm/fifo_efinity_inst/u_efx_fifo_top/genblk2.wr_rst[0]~FF algorithm/fifo_efinity_inst/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 31:  algorithm/fifo_efinity_inst/u_efx_fifo_top/genblk2.rd_rst[0]~FF algorithm/fifo_efinity_inst/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 32:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 33:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_rd_ack_ap[2]~FF
+	Synchronizer 34:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 35:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 36:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 37:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 38:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 39:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 40:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 41:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 42:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 43:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 44:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 45:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 46:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 47:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/w_wr_fifo_rd_en~FF
+	Synchronizer 48:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 49:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 50:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 51:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 52:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 53:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 54:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 55:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 56:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 57:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 58:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 59:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 60:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 61:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 62:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 63:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 64:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 65:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 66:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 67:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 68:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/get_dqs_wr_start_p[2]~FF
+	Synchronizer 69:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 70:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 71:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 72:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[7]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/dq_pipe_ap[8]~FF
+	Synchronizer 73:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 74:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 75:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 76:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 77:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 78:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 79:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 80:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 81:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 82:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 83:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 84:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 85:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 86:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 87:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 88:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 89:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 90:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 91:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 92:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 93:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 94:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 95:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 96:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_rd_ack_ap[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/controller_main/ram_rd_ack_ap[1]~FF
+	Synchronizer 97:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 98:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 99:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 100:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 101:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 102:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 103:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 104:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 105:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 106:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 107:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 108:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 109:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 110:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 111:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 112:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 113:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 114:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 115:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 116:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i13_2
+	Synchronizer 117:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[0]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 118:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i23_2
+	Synchronizer 119:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i24_2
+	Synchronizer 120:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i14_2
+	Synchronizer 121:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i15_2
+	Synchronizer 122:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i16_2
+	Synchronizer 123:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i17_2
+	Synchronizer 124:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[1]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 125:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i18_2
+	Synchronizer 126:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[2]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 127:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i19_2
+	Synchronizer 128:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[3]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 129:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i20_2
+	Synchronizer 130:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[4]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 131:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 132:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[5]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 133:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i13_2
+	Synchronizer 134:  inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc/buffers_0[6]~FF inst_ddr3_axi/inst_efx_ddr3/u_efx_ddr3_soft_controller/top_mc/fifo_rd/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 135:  algorithm/fifo_efinity_inst/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i23_2
+Create F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow\DDR3_MC_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+NumRegions 1
+Starting Global Placer with 8 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1     6592318            -626         2.1%
+          2     3120597            -623         3.9%
+          3     2319454            -675         6.0%
+          4     1671581            -730        11.5%
+          5     1167073            -815        17.0%
+          6      929534            -783        27.3%
+          7      808717            -889        34.4%
+          8      748486            -836        39.1%
+          9      728689           -1084        39.9%
+         10      728607           -1101        40.7%
+         11      705260           -1061        44.0%
+         12      715923           -1011        44.9%
+         13      699268            -922        47.5%
+         14      701541           -1142        49.2%
+         15      691529           -1271        51.7%
+         16      685139           -1252        54.9%
+         17      683130           -1400        54.9%
+         18      674943           -1267        56.7%
+         19      667078           -1349        56.7%
+         20      656820           -1380        58.3%
+         21      661362           -1322        58.8%
+         22      647256           -1558        61.1%
+         23      650001           -1453        61.1%
+         24      644378           -1360        62.3%
+         25      635246           -1466        63.9%
+         26      634685           -1587        64.6%
+         27      618620           -1534        67.7%
+         28      616199           -1438        68.2%
+         29      612161           -1400        68.3%
+         30      609196           -1475        69.6%
+         31      594997           -1512        71.1%
+         32      591298           -1240        73.2%
+         33      588463           -1534        74.2%
+         34      595171           -1554        75.1%
+         35      574844           -1666        77.8%
+         36      583076           -1514        78.9%
+         37      570018           -1480        81.0%
+         38      568407           -1464        82.4%
+         39      568513           -1399        83.4%
+         40      568035           -1717        84.7%
+         41      562483           -1533        85.5%
+         42      564155           -1452        86.6%
+         43      561025           -1511        87.8%
+         44      562725           -1498        89.2%
+         45      561944           -1625        89.6%
+         46      563333           -1414        89.9%
+         47      564126           -1496        90.5%
+         48      564506           -1589        91.5%
+         49      567821           -1674        91.9%
+         50      568787           -1999        92.8%
+         51      569293           -1669        93.4%
+         52      571272           -1553        94.1%
+         53      572419           -1496        94.7%
+         54      573480           -1558        95.3%
+         55      540625           -1671        95.4%
+         56      543390           -1663        95.4%
+         57      547004           -1879        95.9%
+         58      547888           -1981        97.3%
+         59      546906           -1721        97.8%
+         60      547810           -1747        97.8%
+         61      549611           -1649        98.1%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      543390           40566        30.0
+          1      567581           38212        28.7
+          2      555921           37120        26.8
+          3      525779           36404        24.8
+          4      510419           35541        22.8
+          5      499404           35555        20.9
+          6      489488           35217        19.2
+          7      477187           35083        17.6
+          8      469901           34726        16.1
+          9      464033           34480        14.7
+         10      457704           34256        13.4
+         11      453068           34111        12.2
+         12      448656           33840        11.2
+         13      445416           33802        10.2
+         14      441135           33821         9.2
+         15      437672           33633         8.4
+         16      434400           33892         7.7
+         17      432242           33725         7.0
+         18      430405           33546         6.3
+         19      428079           33445         5.7
+         20      426090           33455         5.2
+         21      423634           33378         4.7
+         22      421872           33317         4.3
+         23      419975           33302         3.9
+         24      419049           33210         3.5
+         25      417602           33043         3.2
+         26      416276           33069         2.9
+         27      414477           33066         2.6
+         28      414079           33066         2.3
+         29      413256           33066         2.1
+         30      412571           33105         1.9
+         31      412100           33049         1.7
+         32      406648           32974         1.5
+Starting incremental timing annealer
+Starting incremental timing quench 1 with temperature 0.1 and 1 moves per pass
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      403316           32974        30.0
+          1      403659           32196        26.9
+          2      401289           31741        24.2
+          3      405198           31621        21.7
+          4      400120           31446        19.5
+          5      402385           30985        17.5
+          6      399221           30915        15.7
+          7      401017           30886        14.1
+          8      397529           30807        12.7
+          9      399671           30654        11.4
+         10      396883           30524        10.2
+         11      395433           30375         9.2
+Generate F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow\DDR3_MC_after_qp.qdelay
+Placement successful: 16802 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.457023 at 6,184
+Congestion-weighted HPWL per net: 16.4025
+
+Reading placement constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.qplace'.
+Finished Realigning Types (3830 blocks needed type change)
+Run checks after placement.
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.place'
+Placement took 383.163 seconds.
+	Placement took 582.719 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 1297.93 MB, end = 1545.95 MB, delta = 248.02 MB
+	Placement peak virtual memory usage = 1948.88 MB
+Placement resident set memory usage: begin = 1241.31 MB, end = 1443.12 MB, delta = 201.808 MB
+	Placement peak resident set memory usage = 1863.12 MB
+***** Ending stage placement *****
+

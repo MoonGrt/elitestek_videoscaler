@@ -1,0 +1,539 @@
+{
+    "debug_cores": [
+        {
+            "name": "la0",
+            "type": "la",
+            "uuid": "9ed0eaea3d3947bcb15afbcff97f4313",
+            "trigin_en": false,
+            "trigout_en": false,
+            "auto_inserted": true,
+            "capture_control": false,
+            "data_depth": 16384,
+            "input_pipeline": 1,
+            "probes": [
+                {
+                    "name": "down",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "vs_reg2",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "vs_en",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "vs_reg1",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "down_reg3",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "down_reg1",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "down_en",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "down_reg2",
+                    "width": 1,
+                    "probe_type": 2
+                },
+                {
+                    "name": "algorithm/rgb_i",
+                    "width": 24,
+                    "probe_type": 2
+                },
+                {
+                    "name": "algorithm/de_i",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "algorithm/vs_i",
+                    "width": 1,
+                    "probe_type": 2
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "command": "add_ports",
+            "id": 1,
+            "args": {
+                "netlist": "example_top",
+                "ports": [
+                    {
+                        "name": "jtag_inst2_CAPTURE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_DRCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RESET",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RUNTEST",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SEL",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SHIFT",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDI",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TMS",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_UPDATE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDO",
+                        "dir": "out",
+                        "width": 1
+                    }
+                ]
+            }
+        },
+        {
+            "command": "instantiate",
+            "netlist": "edb_top",
+            "id": 2,
+            "instance": "edb_top_inst"
+        },
+        {
+            "command": "connect",
+            "id": 3,
+            "args": {
+                "instance": "edb_top_inst",
+                "ports": [
+                    {
+                        "name": "bscan_CAPTURE",
+                        "net": "jtag_inst2_CAPTURE"
+                    },
+                    {
+                        "name": "bscan_DRCK",
+                        "net": "jtag_inst2_DRCK"
+                    },
+                    {
+                        "name": "bscan_RESET",
+                        "net": "jtag_inst2_RESET"
+                    },
+                    {
+                        "name": "bscan_RUNTEST",
+                        "net": "jtag_inst2_RUNTEST"
+                    },
+                    {
+                        "name": "bscan_SEL",
+                        "net": "jtag_inst2_SEL"
+                    },
+                    {
+                        "name": "bscan_SHIFT",
+                        "net": "jtag_inst2_SHIFT"
+                    },
+                    {
+                        "name": "bscan_TCK",
+                        "net": "jtag_inst2_TCK"
+                    },
+                    {
+                        "name": "bscan_TDI",
+                        "net": "jtag_inst2_TDI"
+                    },
+                    {
+                        "name": "bscan_TMS",
+                        "net": "jtag_inst2_TMS"
+                    },
+                    {
+                        "name": "bscan_UPDATE",
+                        "net": "jtag_inst2_UPDATE"
+                    },
+                    {
+                        "name": "bscan_TDO",
+                        "net": "jtag_inst2_TDO"
+                    },
+                    {
+                        "name": "la0_clk",
+                        "net": "hdmi_rx_slow_clk",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe0",
+                        "net": "down",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe1",
+                        "net": "vs_reg2",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe2",
+                        "net": "vs_en",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe3",
+                        "net": "vs_reg1",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe4",
+                        "net": "down_reg3",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe5",
+                        "net": "down_reg1",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe6",
+                        "net": "down_en",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe7",
+                        "net": "down_reg2",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe8[0]",
+                        "net": "rgb_i[0]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[1]",
+                        "net": "rgb_i[1]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[2]",
+                        "net": "rgb_i[2]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[3]",
+                        "net": "rgb_i[3]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[4]",
+                        "net": "rgb_i[4]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[5]",
+                        "net": "rgb_i[5]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[6]",
+                        "net": "rgb_i[6]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[7]",
+                        "net": "rgb_i[7]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[8]",
+                        "net": "rgb_i[8]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[9]",
+                        "net": "rgb_i[9]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[10]",
+                        "net": "rgb_i[10]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[11]",
+                        "net": "rgb_i[11]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[12]",
+                        "net": "rgb_i[12]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[13]",
+                        "net": "rgb_i[13]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[14]",
+                        "net": "rgb_i[14]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[15]",
+                        "net": "rgb_i[15]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[16]",
+                        "net": "rgb_i[16]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[17]",
+                        "net": "rgb_i[17]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[18]",
+                        "net": "rgb_i[18]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[19]",
+                        "net": "rgb_i[19]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[20]",
+                        "net": "rgb_i[20]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[21]",
+                        "net": "rgb_i[21]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[22]",
+                        "net": "rgb_i[22]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[23]",
+                        "net": "rgb_i[23]",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe9",
+                        "net": "de_i",
+                        "path": [
+                            "algorithm"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe10",
+                        "net": "vs_i",
+                        "path": [
+                            "algorithm"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "vdbs": [
+        {
+            "file": "debug_top.post.vdb",
+            "instance": "edb_top_inst"
+        }
+    ],
+    "session": {
+        "wizard": {
+            "data_depth": 16384,
+            "capture_control": false,
+            "selected_nets": [
+                {
+                    "name": "down",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "vs_reg2",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "vs_en",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "vs_reg1",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "down_reg3",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "down_reg1",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "down_en",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "down_reg2",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "rgb_i",
+                    "width": 24,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": [
+                        "algorithm"
+                    ],
+                    "net_idx_left": 23,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "de_i",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "algorithm"
+                    ]
+                },
+                {
+                    "name": "vs_i",
+                    "width": 1,
+                    "clk_domain": "hdmi_rx_slow_clk",
+                    "selected_probe_type": "DATA ONLY",
+                    "child": [],
+                    "path": [
+                        "algorithm"
+                    ]
+                }
+            ],
+            "top_module": "example_top",
+            "db_checksum": "ba5fce12098a2c03e7bae2e9a172d1842464edfca8e284870b3519e987537970",
+            "src": "elaborate",
+            "jtag_user": "USER2",
+            "input_pipeline": 1
+        }
+    }
+}

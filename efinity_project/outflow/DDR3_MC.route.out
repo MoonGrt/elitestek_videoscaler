@@ -1,0 +1,218 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.1.150.5.11 
+Compiled: Oct  4 2023.
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti60F225" ...
+
+***** Beginning stage routing ... *****
+
+SDC file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/DDR3_MC.pt.sdc' parsed successfully.
+10 clocks (including virtual clocks), 66 inputs and 137 outputs were constrained.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router Setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Setup Parallel Routing Scheduler]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Route Circuit with 8 threads
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS enabled! Optimizing clock skews ... 
+Non-legalized beneficial skew improved geomean CPD by 6.61% (from 4506ps to 4208ps)
+CSS improved CPD of clock core_clk by 1.64% (from 4701ps to 4624ps)
+CSS improved CPD of clock tac_clk by 5.66% (from 2987ps to 2818ps)
+CSS improved CPD of clock hdmi_rx_slow_clk by 0.79% (from 6341ps to 6291ps)
+CSS improved CPD of clock hdmi_rx_slow_clk_2x by 8.92% (from 4631ps to 4218ps)
+Discretized beneficial skew improved geomean CPD by 4.31% (from 4506ps to 4312ps in 13 iterations and 1.2 sec)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  1: overlap=35049   heapops=4039225    (0%) cpd=4218  frr=1.00  msec=4416
+[Setup Delay Budgets | 1015.3 ms]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hold Fixing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total min wire delay:  22142112
+Hold fix wire delay:       1448
+Hold fix delay ratio:      0.0%
+
+Pins requiring hold fixing: 22 (0.0 %)
+Max pin hold fix delay:    132 ps (297 ps first iter)
+Median pin hold fix delay: 59 ps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  2: overlap=10157   heapops=3545550    (37%) cpd=4198  frr=1.00  msec=1634
+Iter  3: overlap=5973    heapops=2132153    (63%) cpd=4198  frr=1.00  msec=1277
+Iter  4: overlap=4165    heapops=1301553    (75%) cpd=4198  frr=1.00  msec=992
+Iter  5: overlap=3211    heapops=911630     (80%) cpd=4198  frr=1.00  msec=905
+Iter  6: overlap=2658    heapops=605170     (82%) cpd=4198  frr=1.00  msec=834
+Iter  7: overlap=2297    heapops=515905     (83%) cpd=4198  frr=1.00  msec=820
+Iter  8: overlap=1994    heapops=457023     (84%) cpd=4198  frr=1.00  msec=794
+Iter  9: overlap=1731    heapops=493506     (84%) cpd=4198  frr=1.00  msec=820
+Iter 10: overlap=1429    heapops=481170     (84%) cpd=4198  frr=1.00  msec=809
+Iter 11: overlap=1214    heapops=602502     (84%) cpd=4198  frr=1.00  msec=896
+WARNING(1): Oversized routing heap detected
+Iter 12: overlap=1027    heapops=751811     (85%) cpd=4197  frr=1.00  msec=983
+Iter 13: overlap=870     heapops=377695     (85%) cpd=4197  frr=1.00  msec=767
+Iter 14: overlap=696     heapops=370442     (85%) cpd=4197  frr=1.00  msec=766
+Iter 15: overlap=549     heapops=726472     (85%) cpd=4198  frr=1.00  msec=979
+Iter 16: overlap=462     heapops=524072     (85%) cpd=4198  frr=1.00  msec=878
+Iter 17: overlap=357     heapops=528004     (85%) cpd=4198  frr=1.00  msec=880
+Iter 18: overlap=268     heapops=555813     (85%) cpd=4198  frr=1.00  msec=913
+Iter 19: overlap=180     heapops=321550     (85%) cpd=4198  frr=1.00  msec=758
+Iter 20: overlap=135     heapops=321068     (85%) cpd=4198  frr=1.00  msec=754
+Iter 21: overlap=114     heapops=315929     (85%) cpd=4198  frr=1.00  msec=753
+[Rebuild Parallel Routing Scheduler]
+Iter 22: overlap=73      heapops=305968     (85%) cpd=4197  frr=1.00  msec=944
+Iter 23: overlap=49      heapops=300278     (85%) cpd=4197  frr=1.00  msec=887
+Iter 24: overlap=30      heapops=346924     (85%) cpd=4197  frr=1.00  msec=911
+Iter 25: overlap=19      heapops=302342     (85%) cpd=4197  frr=1.00  msec=887
+Iter 26: overlap=6       heapops=285620     (85%) cpd=4197  frr=1.00  msec=879
+Iter 27: overlap=4       heapops=284470     (85%) cpd=4197  frr=1.00  msec=875
+Iter 28: overlap=2       heapops=283661     (85%) cpd=4197  frr=1.00  msec=876
+Iter 29: overlap=1       heapops=282443     (85%) cpd=4197  frr=1.00  msec=881
+Iter 30: overlap=0       heapops=282152     (85%) cpd=4197  frr=1.00  msec=878
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Result
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Succeeded in 32.18 seconds taking 30 iterations! 
+
+First iteration critical path delay = 4.218 ns 
+Last iteration critical path delay  = 4.197 ns (ratio = 1.00)
+Max Routing Heap Size = 100,003
+Routing trace written to file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.troutingtraces' 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing took 37.3039 seconds.
+	Routing took 64.2812 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1545.95 MB, end = 1775.43 MB, delta = 229.48 MB
+	Routing peak virtual memory usage = 1948.88 MB
+Routing resident set memory usage: begin = 1443.12 MB, end = 1678.24 MB, delta = 235.12 MB
+	Routing peak resident set memory usage = 1863.12 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+
+SDC file 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/DDR3_MC.pt.sdc' parsed successfully.
+10 clocks (including virtual clocks), 66 inputs and 137 outputs were constrained.
+
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1541:in[1] to i1541:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1611:in[1] to i1611:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1531:in[1] to i1531:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1431:in[0] to i1431:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1421:in[0] to i1421:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1411:in[0] to i1411:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1401:in[0] to i1401:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1391:in[0] to i1391:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1381:in[0] to i1381:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1371:in[0] to i1371:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1361:in[0] to i1361:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1351:in[0] to i1351:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1341:in[1] to i1341:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1331:in[1] to i1331:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1321:in[1] to i1321:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1311:in[1] to i1311:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1301:in[1] to i1301:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1291:in[1] to i1291:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1281:in[1] to i1281:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1271:in[1] to i1271:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1261:in[1] to i1261:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1251:in[0] to i1251:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1241:in[1] to i1241:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1231:in[1] to i1231:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1221:in[1] to i1221:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1211:in[1] to i1211:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1201:in[0] to i1201:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1191:in[0] to i1191:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1181:in[0] to i1181:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1171:in[0] to i1171:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1161:in[0] to i1161:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i911:in[1] to i911:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i981:in[1] to i981:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i901:in[1] to i901:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1151:in[0] to i1151:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1141:in[0] to i1141:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i1131:in[0] to i1131:out 
+Timer::BuildGraph: ============ Cutting edge BACK edge from i811:in[0] to i811:out 
+Maximum possible analyzed clocks frequency
+    Clock Name      Period (ns)  Frequency (MHz)     Edge
+sys_clk                6.434        155.424         (R-R)
+tdqss_clk              2.030        492.611         (R-R)
+core_clk               4.736        211.149         (R-R)
+tac_clk                2.928        341.530         (R-R)
+twd_clk                2.063        484.731         (R-R)
+hdmi_rx_slow_clk       6.486        154.178         (R-R)
+hdmi_rx_slow_clk_2x    4.307        232.180         (R-R)
+
+Geomean max period: 3.750
+
+Setup (Max) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+sys_clk             sys_clk                  9.260             2.826           (R-R)
+sys_clk             hdmi_rx_slow_clk         0.001            -1.196           (R-R)
+sys_clk             hdmi_rx_slow_clk_2x      0.001            -1.933           (R-R)
+tdqss_clk           tdqss_clk                2.500             0.470           (R-R)
+core_clk            core_clk                 5.000             0.264           (R-R)
+tac_clk             tac_clk                  2.500            -0.428           (R-R)
+twd_clk             twd_clk                  2.500             0.437           (R-R)
+hdmi_rx_slow_clk    sys_clk                  0.001            -3.795           (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk         6.734             0.248           (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk_2x      3.367           -23.106           (R-R)
+hdmi_rx_slow_clk_2x sys_clk                  0.001            -0.870           (R-R)
+hdmi_rx_slow_clk_2x hdmi_rx_slow_clk         3.367             2.380           (R-R)
+hdmi_rx_slow_clk_2x hdmi_rx_slow_clk_2x      3.367            -0.940           (R-R)
+
+Hold (Min) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+sys_clk             sys_clk                   0.000           0.035            (R-R)
+sys_clk             hdmi_rx_slow_clk         -0.001           0.017            (R-R)
+sys_clk             hdmi_rx_slow_clk_2x       0.000           0.100            (R-R)
+tdqss_clk           tdqss_clk                 0.000           0.091            (R-R)
+core_clk            core_clk                  0.000           0.033            (R-R)
+tac_clk             tac_clk                   0.000           0.035            (R-R)
+twd_clk             twd_clk                   0.000           0.038            (R-R)
+hdmi_rx_slow_clk    sys_clk                  -0.001           0.066            (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk          0.000           0.024            (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk_2x       0.000           0.218            (R-R)
+hdmi_rx_slow_clk_2x sys_clk                   0.000           0.042            (R-R)
+hdmi_rx_slow_clk_2x hdmi_rx_slow_clk          0.000           0.137            (R-R)
+hdmi_rx_slow_clk_2x hdmi_rx_slow_clk_2x       0.000           0.033            (R-R)
+
+WARNING(2): Clock domain between sys_clk (rising) and hdmi_rx_slow_clk (rising) may not meet (slack: -1.196 ns) the setup (max) timing requirement
+WARNING(3): Clock domain between sys_clk (rising) and hdmi_rx_slow_clk_2x (rising) may not meet (slack: -1.933 ns) the setup (max) timing requirement
+WARNING(4): Clock domain between tac_clk (rising) and tac_clk (rising) may not meet (slack: -0.428 ns) the setup (max) timing requirement
+WARNING(5): Clock domain between hdmi_rx_slow_clk (rising) and sys_clk (rising) may not meet (slack: -3.795 ns) the setup (max) timing requirement
+WARNING(6): Clock domain between hdmi_rx_slow_clk (rising) and hdmi_rx_slow_clk_2x (rising) may not meet (slack: -23.106 ns) the setup (max) timing requirement
+WARNING(7): Clock domain between hdmi_rx_slow_clk_2x (rising) and sys_clk (rising) may not meet (slack: -0.870 ns) the setup (max) timing requirement
+WARNING(8): Clock domain between hdmi_rx_slow_clk_2x (rising) and hdmi_rx_slow_clk_2x (rising) may not meet (slack: -0.940 ns) the setup (max) timing requirement
+
+Write Timing Report to "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow\DDR3_MC.timing.rpt" ...
+final timing analysis took 5.40799 seconds.
+	final timing analysis took 5.25 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1775.44 MB, end = 1901.66 MB, delta = 126.22 MB
+	final timing analysis peak virtual memory usage = 1948.88 MB
+final timing analysis resident set memory usage: begin = 1678.41 MB, end = 1792.53 MB, delta = 114.116 MB
+	final timing analysis peak resident set memory usage = 1863.12 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv'.
+Successfully processed interface constraints file "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow/DDR3_MC.interface.csv".
+Finished writing bitstream file F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_pnr\DDR3_MC.lbf.
+Bitstream generation took 5.5456 seconds.
+	Bitstream generation took 5.46875 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1901.66 MB, end = 2061.48 MB, delta = 159.816 MB
+	Bitstream generation peak virtual memory usage = 2123.62 MB
+Bitstream generation resident set memory usage: begin = 1792.56 MB, end = 1949.88 MB, delta = 157.316 MB
+	Bitstream generation peak resident set memory usage = 1995.55 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 446.117 seconds.
+	The entire flow of EFX_PNR took 672.547 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 5.54 MB, end = 769.64 MB, delta = 764.1 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 2123.62 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 12.508 MB, end = 732.164 MB, delta = 719.656 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 1995.55 MB

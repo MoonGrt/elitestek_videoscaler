@@ -1,0 +1,72 @@
+{
+    "args": [
+        "-o",
+        "fifo_efinity",
+        "--base_path",
+        "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "memory",
+            "name": "efx_fifo_top",
+            "version": "5.0"
+        }
+    ],
+    "conf": {
+        "SYNC_CLK": "0",
+        "SYNC_STAGE": "2",
+        "DEPTH_2": "11",
+        "DATA_WIDTH": "24",
+        "MODE": "\"STANDARD\"",
+        "OUTPUT_REG": "0",
+        "PROG_FULL_ASSERT": "128",
+        "PROGRAMMABLE_FULL": "\"STATIC_SINGLE\"",
+        "PFN_INTERNAL": "127",
+        "PEA_INTERNAL": "2",
+        "PEN_INTERNAL": "3",
+        "PROGRAMMABLE_EMPTY": "\"NONE\"",
+        "OPTIONAL_FLAGS": "1",
+        "PIPELINE_REG": "1",
+        "FAMILY": "\"TITANIUM\"",
+        "ASYM_WIDTH_RATIO": "4",
+        "BYPASS_RESET_SYNC": "0",
+        "ENDIANESS": "0"
+    },
+    "output": {
+        "external_source_source": [
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\fifo_efinity_tmpl.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\fifo_efinity.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\fifo_efinity_tmpl.vhd",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\fifo_efinity_define.vh"
+        ],
+        "external_example_example": [
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_demo_top.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_demo.peri.xml",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_demo.xml",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_demo_T20.sdc",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\efx_symmetric_width_fifo_top.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_efinity.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\T20F256_devkit\\fifo_efinity_define.vh"
+        ],
+        "external_example_2": [
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_demo_top.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_demo.peri.xml",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_demo.xml",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_demo_Ti60.sdc",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\efx_symmetric_width_fifo_top.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_efinity.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Ti60F225_devkit\\fifo_efinity_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\fifo_tb.sv",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\xrun.sh",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\msim.sh",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\flist",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\modelsim.do",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\fifo_efinity.v",
+            "F:\\Project\\yls\\Project5\\hdmi_demo1\\06_Ti60F225_hdmi_rx2tx_loop_v1\\efinity_project\\ip\\fifo_efinity\\Testbench\\fifo_efinity_define.vh"
+        ]
+    },
+    "sw_version": "2023.1.150",
+    "generated_date": "2023-11-26T11:32:01.382677"
+}

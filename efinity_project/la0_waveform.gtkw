@@ -1,0 +1,22 @@
+[dumpfile] "F:\Project\yls\Project5\simplify_full_led_fill++_vs1\la0_waveform.vcd"
+[dumpfile_mtime] "Fri Dec 01 07:31:35 2023"
+[dumpfile_size] 651
+[savefile] "F:\Project\yls\Project5\simplify_full_led_fill++_vs1\la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 32 16416 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.down
+top.vs_reg2
+top.vs_en
+top.vs_reg1
+top.down_reg3
+top.down_reg1
+top.down_en
+top.down_reg2
+top.\algorithm/rgb_i[23:0]
+top.\algorithm/de_i
+top.\algorithm/vs_i

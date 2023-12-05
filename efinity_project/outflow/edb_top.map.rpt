@@ -1,0 +1,259 @@
+Efinity Synthesis report for project edb_top
+Version: 2023.1.150.5.11
+Generated at: Dec 01, 2023 13:06:46
+Copyright (C) 2013 - 2023  Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+Top-level Entity Name : edb_top
+
+### ### File List (begin) ### ### ###
+F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v
+### ### File List (end) ### ### ###
+
+"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'ram'. (F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v:446)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 24
+Total number of FFs with enable signals: 493
+CE signal <ceg_net5>, number of controlling flip flops: 3
+CE signal <la0/n15839>, number of controlling flip flops: 21
+CE signal <la0/n1389>, number of controlling flip flops: 64
+CE signal <la0/n1906>, number of controlling flip flops: 22
+CE signal <la0/addr_ct_en>, number of controlling flip flops: 29
+CE signal <la0/op_reg_en>, number of controlling flip flops: 4
+CE signal <ceg_net26>, number of controlling flip flops: 6
+CE signal <la0/word_ct_en>, number of controlling flip flops: 16
+CE signal <ceg_net14>, number of controlling flip flops: 64
+CE signal <la0/n2759>, number of controlling flip flops: 3
+CE signal <la0/n10432>, number of controlling flip flops: 3
+CE signal <la0/regsel_ld_en>, number of controlling flip flops: 13
+CE signal <ceg_net221>, number of controlling flip flops: 32
+CE signal <la0/la_biu_inst/n374>, number of controlling flip flops: 15
+CE signal <la0/la_biu_inst/n1307>, number of controlling flip flops: 36
+CE signal <ceg_net351>, number of controlling flip flops: 2
+CE signal <ceg_net348>, number of controlling flip flops: 1
+CE signal <la0/la_biu_inst/fifo_with_read_inst/is_last_data>, number of controlling flip flops: 14
+CE signal <la0/la_biu_inst/n2049>, number of controlling flip flops: 14
+CE signal <la0/la_biu_inst/fifo_push>, number of controlling flip flops: 14
+CE signal <ceg_net355>, number of controlling flip flops: 30
+CE signal <la0/la_biu_inst/fifo_with_read_inst/n791>, number of controlling flip flops: 1
+CE signal <debug_hub_inst/n266>, number of controlling flip flops: 4
+CE signal <debug_hub_inst/n95>, number of controlling flip flops: 82
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 6
+Total number of FFs with set/reset signals: 513
+SR signal <bscan_RESET>, number of controlling flip flops: 390
+SR signal <la0/n2746>, number of controlling flip flops: 2
+SR signal <la0/la_resetn>, number of controlling flip flops: 48
+SR signal <la0/n16480>, number of controlling flip flops: 1
+SR signal <la0/la_biu_inst/fifo_rstn>, number of controlling flip flops: 29
+SR signal <la0/la_biu_inst/fifo_with_read_inst/n961>, number of controlling flip flops: 43
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0i12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0l12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0k12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0h12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0g12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0f12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0e12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0d12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0c12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0b12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$012' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0j12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$32' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3b12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$02' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0m12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0n12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0o12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0p12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0q12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0r12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0s12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0t12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0u12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0v12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0w12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0x12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0y12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0z12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0A12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0B12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0C12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0D12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0E12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0F12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0G12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$0H1' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$312' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3c12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3d12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3e12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3f12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3g12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3h12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3i12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3j12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3k12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3l12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3m12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3n12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3o12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3p12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3q12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3r12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3s12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3t12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3u12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3v12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3w12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3x12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3y12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3z12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3A12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3B12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3C12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3D12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3E12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3F12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3G12' WE[1] tied off to 0.
+Memory instance 'la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$3H1' WE[1] tied off to 0.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5579)" removed instance : la0/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i25
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5518)" representative instance : la0/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5518)" removed instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i6
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5518)" representative instance : la0/GEN_PROBE[9].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5579)" removed instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i25
+@ "F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg/debug_top.v (5518)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF Output: la0/data_from_biu[35](=0)
+FF Output: la0/data_from_biu[36](=0)
+FF Output: la0/data_from_biu[37](=0)
+FF Output: la0/data_from_biu[38](=0)
+FF Output: la0/data_from_biu[39](=0)
+FF Output: la0/data_from_biu[40](=0)
+FF Output: la0/data_from_biu[41](=0)
+FF Output: la0/data_from_biu[42](=0)
+FF Output: la0/data_from_biu[43](=0)
+FF Output: la0/data_from_biu[44](=0)
+FF Output: la0/data_from_biu[45](=0)
+FF Output: la0/data_from_biu[46](=0)
+FF Output: la0/data_from_biu[47](=0)
+FF Output: la0/data_from_biu[48](=0)
+FF Output: la0/data_from_biu[49](=0)
+FF Output: la0/data_from_biu[50](=0)
+FF Output: la0/data_from_biu[51](=0)
+FF Output: la0/data_from_biu[52](=0)
+FF Output: la0/data_from_biu[53](=0)
+FF Output: la0/data_from_biu[54](=0)
+FF Output: la0/data_from_biu[55](=0)
+FF Output: la0/data_from_biu[56](=0)
+FF Output: la0/data_from_biu[57](=0)
+FF Output: la0/data_from_biu[58](=0)
+FF Output: la0/data_from_biu[59](=0)
+FF Output: la0/data_from_biu[60](=0)
+FF Output: la0/data_from_biu[61](=0)
+FF Output: la0/data_from_biu[62](=0)
+FF Output: la0/data_from_biu[63](=0)
+FF instance: la0/address_counter[29]~FF(unreachable)
+FF instance: la0/address_counter[30]~FF(unreachable)
+FF instance: la0/address_counter[31]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[0]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_rd_pointer[14]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_wr_pointer[14]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[1]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[2]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[3]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[4]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[5]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[6]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[7]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[8]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[9]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[10]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[11]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[12]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[13]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/next_segment_wr_pointer[14]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        SRLs        ADDs        LUTs    COMB4s      RAMs DSP/MULTs
+------------------------------------------------------------         ---        ----        ----        ----      ----      ---- ---------
+edb_top:edb_top                                                   563(0)       34(0)      114(0)      799(0)      0(0)     70(0)      0(0)
+ +la0:edb_la_top_renamed_due_excessive_length_1                 477(257)       34(0)     114(47)    781(464)      0(0)     70(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32                                       32(32)        0(0)        0(0)      55(55)      0(0)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)        0(0)        8(8)      0(0)      0(0)      0(0)
+  +GEN_PROBE[9].genblk7.genblk3.trigger_cu:compare_unit(W...        8(8)        0(0)        0(0)        9(9)      0(0)      0(0)      0(0)
+  +trigger_tu:trigger_unit(WIDTH=32'b010,PIPE=1)                    1(1)        0(0)        0(0)        4(4)      0(0)      0(0)      0(0)
+  +la_biu_inst:la_biu(CAPTURE_WIDTH=32'b0100010,DATA_DEPT...     172(68)       34(0)       67(0)     241(71)      0(0)     70(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read(DATA_WIDTH=32'b010...     104(76)      34(34)      67(67)     170(93)      0(0)     70(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit(TOTA...      14(14)        0(0)        0(0)      15(15)      0(0)      0(0)      0(0)
+    +transcode_read_addr:fifo_address_trancode_unit(TOTAL...      14(14)        0(0)        0(0)      27(27)      0(0)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram(D...        0(0)        0(0)        0(0)      35(35)      0(0)    70(70)      0(0)
+ +debug_hub_inst:debug_hub                                        86(86)        0(0)        0(0)      18(18)      0(0)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+     Clock     Flip-Flops     Shift-Regs   Memory Ports    Multipliers
+     -----     ----------     ----------   ------------    -----------
+ bscan_TCK            390              0              0              0
+   la0_clk            173             34            140              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Titanium
+device : Ti60F225
+project : edb_top
+root : edb_top
+I : F:/Project/yls/Project5/simplify_full_led_fill++_vs1
+I : F:/Project/yls/Project5/simplify_full_led_fill++_vs1/ip/efx_ddr3_axi_1
+I : F:/Project/yls/Project5/simplify_full_led_fill++_vs1/ip/fifo_efinity
+output-dir : F:/Project/yls/Project5/simplify_full_led_fill++_vs1/outflow
+work-dir : F:/Project/yls/Project5/simplify_full_led_fill++_vs1/work_dbg
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+seq_opt : 0
+mode : speed
+num_srl : -1
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	45
+OUTPUT PORTS    : 	1
+
+EFX_ADD         : 	114
+EFX_LUT4        : 	799
+   1-2  Inputs  : 	170
+   3    Inputs  : 	272
+   4    Inputs  : 	357
+EFX_FF          : 	563
+EFX_SRL8        : 	34
+EFX_RAM10       : 	70
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 6s
+Elapsed synthesis time : 6s
